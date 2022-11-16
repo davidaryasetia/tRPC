@@ -23,6 +23,7 @@ const App = () => {
       url: "http://localhost:8080/trpc/",
     })
   );
+
   return (
     <trpc.Provider client={trpcClient} queryClient={client}>
       <QueryClientProvider client={client}>
