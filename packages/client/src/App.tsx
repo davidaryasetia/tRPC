@@ -8,11 +8,11 @@ import "./index.scss";
 const client = new QueryClient();
 
 const AppContent = () => {
-  const hello = trpc.useQuery(["hello"]);
+  const getMessages = trpc.useQuery(["getMessages"]);
 
   return (
     <div className="mt-10 text-3xl mx-auto max-w-6xl">
-      <div>{JSON.stringify(hello.data)}</div>
+      <div>{JSON.stringify(getMessages.data)}</div>
     </div>
   );
 };
